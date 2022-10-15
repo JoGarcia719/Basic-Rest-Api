@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\ProductController;
 use App\Models\Product;
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +19,7 @@ use App\Models\Product;
  
 Route::get('products', [ProductController::class, 'allProducts']);
 
-Route::post('product/add',[ProductsController::class, 'addProduct']);
+Route::post('products/add',[ProductController::class, 'addProduct']);
 
 Route::get('products/{product_id}',[ProductController::class, 'singleProduct']);
 
